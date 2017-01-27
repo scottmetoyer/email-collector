@@ -5,23 +5,38 @@
 </ion-header>
 
 <ion-content padding>
-  <div class="header-image">
-    <img src="assets/images/header.png"/>
-  </div>
-  <div class="intro"></div>
-  <div class="email-input">
-    <ion-input type="email" placeholder="Enter your email"></ion-input>
+  <div class="body">
+    
   </div>
   <ion-grid>
     <ion-row>
-      <ion-col width-20>
-        <ion-checkbox></ion-checkbox>
+        <ion-col width-10></ion-col>
+        <ion-col width-80>
+          <div class="header-image">
+            <img src="assets/images/header.png"/>
+          </div>
+          <div class="intro">Introductory Text Introductory Text Introductory Text Introductory Text Introductory Text Introductory Text 
+      Introductory Text Introductory Text Introductory Text Introductory Text Introductory Text 
+      Introductory Text Introductory Text Introductory Text Introductory Text Introductory Text 
+      Introductory Text Introductory Text Introductory Text Introductory Text Introductory Text 
+          </div>
+          <div class="email-box">
+            <ion-input text-center type="email" placeholder="Enter your email"></ion-input>
+          </div>
+        </ion-col>
+        <ion-col width-10></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50>
+        <ion-item text-wrap>
+          <ion-checkbox></ion-checkbox>
+          <ion-label>
+            Enter your email to stay up to date with our contests, promotions, and other news.
+          </ion-label>
+        </ion-item>
       </ion-col>
-      <ion-col width-40>
-        Enter your email to stay up to date with our contests, promotions, and other news.
-      </ion-col>
-      <ion-col width-40>
-        <button>SUBMIT</button>
+      <ion-col width-50 vertical-middle>
+        <button ion-button full>SUBMIT</button>
       </ion-col>
     </ion-row>
   </ion-grid>

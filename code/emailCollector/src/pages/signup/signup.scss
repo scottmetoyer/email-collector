@@ -2,4 +2,66 @@ page-signup {
     .header-image {
         text-align: center;
     }
+
+    .body {
+        padding-left: 40px;
+        padding-right: 40px;   
+    }
+
+    .email-box {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .email-box input {
+        padding: 10px;
+        font-size: 20px; 
+        background-color: #a8a8a8;
+        color: #fff;
+    }
+
+    .intro {
+        padding: 20px;
+        font-size: 1.6rem;
+    }
+
+    [text-wrap] .label-md {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        vertical-align: top;
+    }
+
+    .item-md.item-block .item-inner {
+        border-bottom: 0 !important;
+        font-size: 20px !important;
+    }
+
+    .checkbox-md .checkbox-icon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .checkbox-md .checkbox-checked .checkbox-inner {
+        top: 8px !important;
+        left: 15px !important;
+        width: 8px !important;
+        height: 16px !important;
+    }
+
+    .text-input::-moz-placeholder {
+        color: white;
+    }
+
+    .text-input:-ms-input-placeholder {
+        color: white;
+    }
+
+    .text-input::-webkit-input-placeholder {
+        text-indent: 0;
+        color: white;
+    }
+
+    .button {
+        padding: 20px;
+    }
 }
