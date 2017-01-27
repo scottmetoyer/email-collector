@@ -20,8 +20,11 @@
       Introductory Text Introductory Text Introductory Text Introductory Text Introductory Text 
       Introductory Text Introductory Text Introductory Text Introductory Text Introductory Text 
           </div>
-          <div class="email-box">
-            <ion-input text-center type="email" placeholder="Enter your email"></ion-input>
+          <div class="text-box">
+            <ion-input text-center placeholder="Enter your name" [(ngModel)]="name"></ion-input>
+          </div>
+          <div class="text-box">
+            <ion-input text-center type="email" placeholder="Enter your email" [(ngModel)]="email"></ion-input>
           </div>
         </ion-col>
         <ion-col width-10></ion-col>
@@ -29,14 +32,14 @@
     <ion-row>
       <ion-col width-50>
         <ion-item text-wrap>
-          <ion-checkbox></ion-checkbox>
+          <ion-checkbox [(ngModel)]="allowText"></ion-checkbox>
           <ion-label>
             Enter your email to stay up to date with our contests, promotions, and other news.
           </ion-label>
         </ion-item>
       </ion-col>
       <ion-col width-50 vertical-middle>
-        <button ion-button full>SUBMIT</button>
+        <button ion-button full (click)="saveInput()">SUBMIT</button>
       </ion-col>
     </ion-row>
   </ion-grid>
