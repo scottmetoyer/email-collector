@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { NavController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
+
 @Component({
   selector: 'page-signup',
   templateUrl: 'signup.html'
@@ -46,5 +47,4 @@ export class SignupPage {
       this.allowText = false;
     });
   }
-
 }

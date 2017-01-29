@@ -20,6 +20,10 @@ page-signup {
         color: #fff;
     }
 
+    input[aria-hidden] {
+        display: none;
+    }
+
     .intro {
         padding: 20px;
         font-size: 1.6rem;
@@ -31,9 +35,9 @@ page-signup {
         vertical-align: top;
     }
 
-    .item-md.item-block .item-inner {
-        border-bottom: 0 !important;
+   .item-inner {
         font-size: 20px !important;
+        border: 0 !important;
     }
 
     .checkbox-md .checkbox-icon {
