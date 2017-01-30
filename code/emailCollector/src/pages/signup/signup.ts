@@ -16,6 +16,17 @@ export class SignupPage {
   }
 
   saveInput() {
+    // Validate that email was entered
+    if (this.email == '') {
+      this.alertCtrl.create({
+        title: 'Email is required',
+        subTitle: 'Please enter a valid email address',
+        buttons: ['OK']
+      }).present();
+
+      return;
+    }
+    
     // Fetch the list object from storage provider
     this.storage.get('email-list').then((val) => {
       if (val == null) {
